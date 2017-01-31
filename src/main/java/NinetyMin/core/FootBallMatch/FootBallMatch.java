@@ -1,7 +1,5 @@
 package NinetyMin.core.FootBallMatch;
 
-import com.fasterxml.jackson.databind.deser.DataFormatReaders;
-
 /**
  * Created by orlavy on 1/31/17.
  */
@@ -11,7 +9,7 @@ public class FootBallMatch {
     Integer homeScore;
     Integer awayScore;
     MatchStatus status;
-    FootBallLeague tournament;
+    FootBallTournament tournament;
     String startTime;
 
     public String getHomeTeam() {
@@ -54,11 +52,11 @@ public class FootBallMatch {
         this.status = status;
     }
 
-    public FootBallLeague getTournament() {
+    public FootBallTournament getTournament() {
         return tournament;
     }
 
-    public void setTournament(FootBallLeague tournament) {
+    public void setTournament(FootBallTournament tournament) {
         this.tournament = tournament;
     }
 

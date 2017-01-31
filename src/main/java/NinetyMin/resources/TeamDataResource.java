@@ -1,6 +1,8 @@
 package NinetyMin.resources;
 
 import NinetyMin.api.match.MatchApi;
+import NinetyMin.core.FootBallMatch.FootBallMatch;
+import NinetyMin.core.managed.CachaingService;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -8,6 +10,10 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
+
+import static com.sun.xml.internal.ws.policy.sourcemodel.wspolicy.XmlToken.Optional;
 
 /**
  * Created by orlavy on 1/27/17.
@@ -18,9 +24,12 @@ public class TeamDataResource {
     @GET
     @Produces("application/json")
     public List<MatchApi> getTeamData(@PathParam("teamId") int teamId){
-
-        return makeList();
+        List<FootBallMatch> matches = CachaingService.INSTANCE().getMatchCacher().
+                getMatchesForTeam(teamId, java.util.Optional.empty());
+        return matches.stream().map(MatchApi::fromFootBallMatch).collect(Collectors.toList());
     }
+
+
 
     private List<MatchApi> makeList(){
         List<MatchApi> matchApis = new LinkedList<>();

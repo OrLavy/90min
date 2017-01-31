@@ -1,6 +1,6 @@
 package NinetyMin.core.scrapping.concreteScrappers.bbcSports;
 
-import NinetyMin.core.FootBallMatch.FootBallLeague;
+import NinetyMin.core.FootBallMatch.FootBallTournament;
 import NinetyMin.core.FootBallMatch.FootBallMatch;
 import NinetyMin.core.FootBallMatch.MatchStatus;
 import NinetyMin.core.scrapping.AbstractCacheableWebScrapper;
@@ -19,21 +19,21 @@ import java.util.stream.Stream;
  */
 public class BbcFootBallScrapper extends AbstractCacheableWebScrapper<List<FootBallMatch>> {
 
-    FootBallLeague footBallLeague;
+    FootBallTournament footBallTournament;
     MatchStatus matchStatus;
 
-    public BbcFootBallScrapper(URL url, FootBallLeague league, MatchStatus matchStatus) {
+    public BbcFootBallScrapper(URL url, FootBallTournament league, MatchStatus matchStatus) {
         super(url);
-        this.footBallLeague = league;
+        this.footBallTournament = league;
         this.matchStatus = matchStatus;
     }
 
-    public FootBallLeague getFootBallLeague() {
-        return footBallLeague;
+    public FootBallTournament getFootBallTournament() {
+        return footBallTournament;
     }
 
-    public void setFootBallLeague(FootBallLeague footBallLeague) {
-        this.footBallLeague = footBallLeague;
+    public void setFootBallTournament(FootBallTournament footBallTournament) {
+        this.footBallTournament = footBallTournament;
     }
 
     public MatchStatus getMatchStatus() {
@@ -72,7 +72,7 @@ public class BbcFootBallScrapper extends AbstractCacheableWebScrapper<List<FootB
     }
 
     private String findTournamentFilterValue(){
-        String leagueName = this.footBallLeague.getLeagueName().toLowerCase();
+        String leagueName = this.footBallTournament.getLeagueName().toLowerCase();
         return this.findTournamentOptionTag(leagueName).attr("value");
     }
 
@@ -96,7 +96,7 @@ public class BbcFootBallScrapper extends AbstractCacheableWebScrapper<List<FootB
             }
 
             footBallMatch.setStatus(matchStatus);
-            footBallMatch.setTournament(footBallLeague);
+            footBallMatch.setTournament(footBallTournament);
 
             footBallMatch.setStartTime(extractStartTime(tr));
 

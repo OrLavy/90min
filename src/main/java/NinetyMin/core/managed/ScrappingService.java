@@ -1,8 +1,10 @@
 package NinetyMin.core.managed;
 
-import NinetyMin.core.FootBallMatch.FootBallLeague;
+import NinetyMin.core.FootBallMatch.FootBallTournament;
 import NinetyMin.core.FootBallMatch.FootBallMatch;
 import NinetyMin.core.FootBallMatch.MatchStatus;
+import NinetyMin.core.caching.MatchCacher;
+import NinetyMin.core.caching.MatchesDataCacher;
 import NinetyMin.core.configurations.UrlScrappingConfigurations;
 import NinetyMin.core.scrapping.concreteScrappers.bbcSports.BbcFootBallScrapper;
 import io.dropwizard.lifecycle.Managed;
@@ -14,20 +16,28 @@ import java.util.*;
  */
 public class ScrappingService implements Managed{
     private final UrlScrappingConfigurations urlScrappingConfigurations;
-    Set<FootBallLeague> wantedLeagues;
+    Set<FootBallTournament> wantedLeagues;
 
     public ScrappingService(UrlScrappingConfigurations urlScrappingConfigurations){
         this.urlScrappingConfigurations = urlScrappingConfigurations;
-        this.wantedLeagues = EnumSet.of(FootBallLeague.FA_CUP,FootBallLeague.PREMIER_LEAGUE);
+        this.wantedLeagues = EnumSet.of(FootBallTournament.FA_CUP, FootBallTournament.PREMIER_LEAGUE);
+    }
+
+    public void scrapeAndCacheData(){
+        MatchesDataCacher matchesDataCacher = CachaingService.INSTANCE().getMatchCacher();
+        matchesDataCacher.clearMatches();
+
+        List<FootBallMatch> matches = scrapeAllMatches(this.wantedLeagues);
+        matchesDataCacher.addMatches(matches);
     }
 
     @Override
     public void start() throws Exception {
-        System.out.println("In application start up");
+        System.out.println("Starting data scrapping");
 
-        List<FootBallMatch> matches = scrapeAllMatches(this.wantedLeagues);
+        this.scrapeAndCacheData();
 
-        System.out.println("done");
+        System.out.println("Data scrapping finished");
     }
 
     @Override
@@ -35,7 +45,7 @@ public class ScrappingService implements Managed{
 
     }
 
-    private List<FootBallMatch> scrapeAllMatches(Set<FootBallLeague> forLeagues){
+    private List<FootBallMatch> scrapeAllMatches(Set<FootBallTournament> forLeagues){
         List<FootBallMatch> scrappedMatches = new LinkedList<>();
 
         scrappedMatches.addAll(scrapeFixturesMatches(forLeagues));
@@ -44,36 +54,36 @@ public class ScrappingService implements Managed{
         return scrappedMatches;
     }
 
-    private List<FootBallMatch> scrapeFixturesMatches(Set<FootBallLeague> forLeagues){
+    private List<FootBallMatch> scrapeFixturesMatches(Set<FootBallTournament> forLeagues){
         BbcFootBallScrapper fixtureMatchesScrapper = new BbcFootBallScrapper(
                 this.urlScrappingConfigurations.getBbcFixtures(),
-                FootBallLeague.PREMIER_LEAGUE,
+                FootBallTournament.PREMIER_LEAGUE,
                 MatchStatus.UpComing);
 
         return scrapeForGivenLeagues(fixtureMatchesScrapper, forLeagues);
     }
 
-    private List<FootBallMatch> scrapePlayedMatches(Set<FootBallLeague> forLeagues){
+    private List<FootBallMatch> scrapePlayedMatches(Set<FootBallTournament> forLeagues){
         BbcFootBallScrapper playedMatchesScrapper = new BbcFootBallScrapper(
                 this.urlScrappingConfigurations.getBbcResults(),
-                FootBallLeague.PREMIER_LEAGUE,
+                FootBallTournament.PREMIER_LEAGUE,
                 MatchStatus.Played);
 
         return scrapeForGivenLeagues(playedMatchesScrapper, forLeagues);
     }
 
-    private List<FootBallMatch> scrapeForGivenLeagues(BbcFootBallScrapper bbcFootBallScrapper, Set<FootBallLeague> forLeagues){
+    private List<FootBallMatch> scrapeForGivenLeagues(BbcFootBallScrapper bbcFootBallScrapper, Set<FootBallTournament> forLeagues){
         List<FootBallMatch> scrappedMatches = new LinkedList<>();
 
-        for (FootBallLeague league : forLeagues){
+        for (FootBallTournament league : forLeagues){
             scrappedMatches.addAll(this.scrapeByLeague(bbcFootBallScrapper, league));
         }
 
         return scrappedMatches;
     }
 
-    private List<FootBallMatch> scrapeByLeague(BbcFootBallScrapper bbcFootBallScrapper, FootBallLeague footBallLeague){
-        bbcFootBallScrapper.setFootBallLeague(footBallLeague);
+    private List<FootBallMatch> scrapeByLeague(BbcFootBallScrapper bbcFootBallScrapper, FootBallTournament footBallTournament){
+        bbcFootBallScrapper.setFootBallTournament(footBallTournament);
         return bbcFootBallScrapper.reScrapeData();
     }
 }

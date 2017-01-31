@@ -2,6 +2,7 @@ package NinetyMin;
 
 import NinetyMin.core.managed.ScrappingService;
 import NinetyMin.resources.TeamDataResource;
+import NinetyMin.resources.TeamIdentifiersResource;
 import NinetyMin.resources.TournamentDataResource;
 import io.dropwizard.Application;
 import io.dropwizard.lifecycle.Managed;
@@ -33,6 +34,7 @@ public class OrLavyApplication extends Application<OrLavyConfiguration> {
         // TODO: implement application
         environment.jersey().register(new TeamDataResource());
         environment.jersey().register(new TournamentDataResource());
+        environment.jersey().register(new TeamIdentifiersResource());
     }
 
 }
