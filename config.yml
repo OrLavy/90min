@@ -2,3 +2,7 @@ logging:
   level: INFO
   loggers:
     NinetyMin: DEBUG
+
+urlScrappingConfigurations:
+  bbcResults : http://www.bbc.com/sport/football/results
+  bbcFixtures : http://www.bbc.com/sport/football/fixtures

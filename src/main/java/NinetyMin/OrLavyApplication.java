@@ -1,5 +1,6 @@
 package NinetyMin;
 
+import NinetyMin.core.managed.ScrappingService;
 import NinetyMin.resources.TeamDataResource;
 import NinetyMin.resources.TournamentDataResource;
 import io.dropwizard.Application;
@@ -27,17 +28,7 @@ public class OrLavyApplication extends Application<OrLavyConfiguration> {
     public void run(final OrLavyConfiguration configuration,
                     final Environment environment) {
 
-        environment.lifecycle().manage(new Managed() {
-            @Override
-            public void start() throws Exception {
-                System.out.println("In application start up");
-            }
-
-            @Override
-            public void stop() throws Exception {
-
-            }
-        });
+        environment.lifecycle().manage(new ScrappingService(configuration.getUrlScrappingConfigurations()));
 
         // TODO: implement application
         environment.jersey().register(new TeamDataResource());
