@@ -1,27 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="15646a83-be09-486b-ae3f-339b86ceb2b3" name="Default" comment="Initial Commit">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/NinetyMin/core/FootBallMatch/FootBallLeague.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/NinetyMin/core/FootBallMatch/FootBallMatch.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/NinetyMin/core/FootBallMatch/MatchStatus.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/NinetyMin/core/FootBallMatch/TeamScore.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/CachableWebScrapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/concreteScrappers/bbcSports/BbcFootBallScrapper.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/NinetyMin/OrLavyApplication$1.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/NinetyMin/api/match/Match.java" afterPath="$PROJECT_DIR$/src/main/java/NinetyMin/api/match/MatchApi.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/AbstractWebScrapper.java" afterPath="$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/AbstractCacheableWebScrapper.java" />
+    <list default="true" id="15646a83-be09-486b-ae3f-339b86ceb2b3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/NinetyMin/OrLavyApplication.class" afterPath="$PROJECT_DIR$/target/classes/NinetyMin/OrLavyApplication.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/NinetyMin/OrLavyConfiguration.class" afterPath="$PROJECT_DIR$/target/classes/NinetyMin/OrLavyConfiguration.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/NinetyMin/resources/TeamDataResource.class" afterPath="$PROJECT_DIR$/target/classes/NinetyMin/resources/TeamDataResource.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OrLavyProject.iml" afterPath="$PROJECT_DIR$/OrLavyProject.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/NinetyMin/core/managed/ScrappingService.java" afterPath="$PROJECT_DIR$/src/main/java/NinetyMin/core/managed/ScrappingService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/WebScrapper.java" afterPath="$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/WebScrapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/concreteScrappers/PremiereLeagueScrapper.java" afterPath="$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/concreteScrappers/PremiereLeagueScrapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/concreteScrappers/TeamsScrapper.java" afterPath="$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/concreteScrappers/TeamsScrapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/NinetyMin/resources/TeamDataResource.java" afterPath="$PROJECT_DIR$/src/main/java/NinetyMin/resources/TeamDataResource.java" />
     </list>
     <ignored path="OrLavyProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1006,7 +990,7 @@
       <updated>1485522659380</updated>
       <workItem from="1485522673568" duration="5020000" />
       <workItem from="1485626910469" duration="3152000" />
-      <workItem from="1485786014074" duration="28010000" />
+      <workItem from="1485786014074" duration="28025000" />
     </task>
     <task id="LOCAL-00001" summary="Basic versionn of scrapping">
       <created>1485870408668</created>
@@ -1015,11 +999,18 @@
       <option name="project" value="LOCAL" />
       <updated>1485870408668</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Finished scrapping">
+      <created>1485889428865</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1485889428865</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36182000" />
+    <option name="totallyTimeSpent" value="36197000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1077,7 +1068,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Basic versionn of scrapping" />
-    <option name="LAST_COMMIT_MESSAGE" value="Basic versionn of scrapping" />
+    <MESSAGE value="Finished scrapping" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished scrapping" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
