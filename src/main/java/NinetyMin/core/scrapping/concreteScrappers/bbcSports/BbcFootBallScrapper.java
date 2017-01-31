@@ -82,6 +82,8 @@ public class BbcFootBallScrapper extends AbstractCacheableWebScrapper<List<FootB
     }
 
     private class RowToFootBallMatchMapper implements Function<Jerry, FootBallMatch>{
+        private final String UNDECIDED_TEAM = "undecided team";
+
 
         @Override
         public FootBallMatch apply(Jerry tr) {
@@ -90,7 +92,7 @@ public class BbcFootBallScrapper extends AbstractCacheableWebScrapper<List<FootB
             footBallMatch.setAwayTeam(extractAwayTeam(tr));
             footBallMatch.setHomeTeam(extractHomeTeam(tr));
 
-            if (matchStatus == MatchStatus.Played){
+            if (matchStatus == MatchStatus.PLAYED){
                 footBallMatch.setAwayScore(extractAwayScore(tr));
                 footBallMatch.setHomeScore(extractHomeScore(tr));
             }
@@ -104,7 +106,8 @@ public class BbcFootBallScrapper extends AbstractCacheableWebScrapper<List<FootB
         }
 
         private String extractHomeTeam(Jerry tr){
-            return tr.$(".team-home a").text();
+            String standardTeamHomeName = tr.$(".team-home a").text().trim();
+            return standardTeamHomeName.isEmpty() ? tr.$(".team-away").text().trim() : standardTeamHomeName;
         }
 
         private Integer extractHomeScore(Jerry tr){
@@ -112,7 +115,8 @@ public class BbcFootBallScrapper extends AbstractCacheableWebScrapper<List<FootB
         }
 
         private String extractAwayTeam(Jerry tr){
-            return tr.$(".team-away a").text();
+            String teamAwayName = tr.$(".team-away a").text().trim();
+            return teamAwayName.isEmpty() ? tr.$(".team-away").text().trim() : teamAwayName;
         }
 
         private Integer extractAwayScore(Jerry tr){
@@ -120,7 +124,7 @@ public class BbcFootBallScrapper extends AbstractCacheableWebScrapper<List<FootB
         }
 
         private String extractStartTime(Jerry tr){
-            return tr.$(".time").text().trim();
+            return tr.$(".time,.kickoff").text().trim();
         }
 
         private int[] extractGameScore(Jerry tr){

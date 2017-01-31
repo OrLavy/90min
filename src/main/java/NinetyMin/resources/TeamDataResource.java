@@ -2,12 +2,10 @@ package NinetyMin.resources;
 
 import NinetyMin.api.match.MatchApi;
 import NinetyMin.core.FootBallMatch.FootBallMatch;
+import NinetyMin.core.FootBallMatch.MatchStatus;
 import NinetyMin.core.managed.CachaingService;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
-import javax.ws.rs.Produces;
+import javax.ws.rs.*;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Optional;
@@ -23,9 +21,9 @@ public class TeamDataResource {
 
     @GET
     @Produces("application/json")
-    public List<MatchApi> getTeamData(@PathParam("teamId") int teamId){
+    public List<MatchApi> getTeamData(@PathParam("teamId") int teamId, @QueryParam("match_status") String status){
         List<FootBallMatch> matches = CachaingService.INSTANCE().getMatchCacher().
-                getMatchesForTeam(teamId, java.util.Optional.empty());
+                getMatchesForTeam(teamId, MatchStatus.optionalFromString(status));
         return matches.stream().map(MatchApi::fromFootBallMatch).collect(Collectors.toList());
     }
 

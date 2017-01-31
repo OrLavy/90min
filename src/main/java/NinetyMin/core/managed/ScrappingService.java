@@ -3,7 +3,6 @@ package NinetyMin.core.managed;
 import NinetyMin.core.FootBallMatch.FootBallTournament;
 import NinetyMin.core.FootBallMatch.FootBallMatch;
 import NinetyMin.core.FootBallMatch.MatchStatus;
-import NinetyMin.core.caching.MatchCacher;
 import NinetyMin.core.caching.MatchesDataCacher;
 import NinetyMin.core.configurations.UrlScrappingConfigurations;
 import NinetyMin.core.scrapping.concreteScrappers.bbcSports.BbcFootBallScrapper;
@@ -58,7 +57,7 @@ public class ScrappingService implements Managed{
         BbcFootBallScrapper fixtureMatchesScrapper = new BbcFootBallScrapper(
                 this.urlScrappingConfigurations.getBbcFixtures(),
                 FootBallTournament.PREMIER_LEAGUE,
-                MatchStatus.UpComing);
+                MatchStatus.UPCOMING);
 
         return scrapeForGivenLeagues(fixtureMatchesScrapper, forLeagues);
     }
@@ -67,7 +66,7 @@ public class ScrappingService implements Managed{
         BbcFootBallScrapper playedMatchesScrapper = new BbcFootBallScrapper(
                 this.urlScrappingConfigurations.getBbcResults(),
                 FootBallTournament.PREMIER_LEAGUE,
-                MatchStatus.Played);
+                MatchStatus.PLAYED);
 
         return scrapeForGivenLeagues(playedMatchesScrapper, forLeagues);
     }
