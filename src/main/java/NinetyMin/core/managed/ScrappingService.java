@@ -7,6 +7,8 @@ import NinetyMin.core.caching.MatchesDataCacher;
 import NinetyMin.core.configurations.UrlScrappingConfigurations;
 import NinetyMin.core.scrapping.concreteScrappers.bbcSports.BbcFootBallScrapper;
 import io.dropwizard.lifecycle.Managed;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.*;
 
@@ -14,6 +16,7 @@ import java.util.*;
  * Created by orlavy on 1/30/17.
  */
 public class ScrappingService implements Managed{
+    private final static Logger logger = LoggerFactory.getLogger(ScrappingService.class);
     private final UrlScrappingConfigurations urlScrappingConfigurations;
     Set<FootBallTournament> wantedLeagues;
 
@@ -32,11 +35,9 @@ public class ScrappingService implements Managed{
 
     @Override
     public void start() throws Exception {
-        System.out.println("Starting data scrapping");
-
+        ScrappingService.logger.info("Starting data scrapping");
         this.scrapeAndCacheData();
-
-        System.out.println("Data scrapping finished");
+        ScrappingService.logger.info("Data scrapping finished");
     }
 
     @Override
