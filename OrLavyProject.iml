@@ -93,5 +93,27 @@
     <orderEntry type="library" name="Maven: ch.qos.logback:logback-access:1.1.7" level="project" />
     <orderEntry type="library" name="Maven: net.sourceforge.argparse4j:argparse4j:0.7.0" level="project" />
     <orderEntry type="library" name="Maven: org.eclipse.jetty.toolchain.setuid:jetty-setuid-java:1.0.3" level="project" />
+    <orderEntry type="library" name="Maven: org.jodd:jodd-all:3.8.1" level="project" />
+    <orderEntry type="library" name="Maven: org.jodd:jodd-bean:3.8.1" level="project" />
+    <orderEntry type="library" name="Maven: org.jodd:jodd-core:3.8.1" level="project" />
+    <orderEntry type="library" name="Maven: org.jodd:jodd-db:3.8.1" level="project" />
+    <orderEntry type="library" name="Maven: org.jodd:jodd-decora:3.8.1" level="project" />
+    <orderEntry type="library" name="Maven: org.jodd:jodd-htmlstapler:3.8.1" level="project" />
+    <orderEntry type="library" name="Maven: org.jodd:jodd-http:3.8.1" level="project" />
+    <orderEntry type="library" name="Maven: org.jodd:jodd-json:3.8.1" level="project" />
+    <orderEntry type="library" name="Maven: org.jodd:jodd-jtx:3.8.1" level="project" />
+    <orderEntry type="library" name="Maven: org.jodd:jodd-lagarto:3.8.1" level="project" />
+    <orderEntry type="library" name="Maven: org.jodd:jodd-log:3.8.1" level="project" />
+    <orderEntry type="library" name="Maven: org.jodd:jodd-madvoc:3.8.1" level="project" />
+    <orderEntry type="library" name="Maven: org.jodd:jodd-mail:3.8.1" level="project" />
+    <orderEntry type="library" name="Maven: javax.mail:javax.mail-api:1.5.6" level="project" />
+    <orderEntry type="library" name="Maven: com.sun.mail:javax.mail:1.5.6" level="project" />
+    <orderEntry type="library" name="Maven: javax.activation:activation:1.1" level="project" />
+    <orderEntry type="library" name="Maven: org.jodd:jodd-petite:3.8.1" level="project" />
+    <orderEntry type="library" name="Maven: org.jodd:jodd-props:3.8.1" level="project" />
+    <orderEntry type="library" name="Maven: org.jodd:jodd-proxetta:3.8.1" level="project" />
+    <orderEntry type="library" name="Maven: org.jodd:jodd-servlet:3.8.1" level="project" />
+    <orderEntry type="library" name="Maven: org.jodd:jodd-upload:3.8.1" level="project" />
+    <orderEntry type="library" name="Maven: org.jodd:jodd-vtor:3.8.1" level="project" />
   </component>
 </module>

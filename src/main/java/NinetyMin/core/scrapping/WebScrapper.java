@@ -6,5 +6,5 @@ import java.io.IOException;
  * Created by orlavy on 1/30/17.
  */
 public interface WebScrapper<T> {
-    T scrapeData() throws IOException;
+    T scrapeData();
 }

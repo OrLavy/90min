@@ -14,14 +14,16 @@ import java.net.URL;
 /**
  * Created by orlavy on 1/30/17.
  */
-public abstract class AbstractWebScrapper<T> implements WebScrapper<T> {
+public abstract class AbstractCacheableWebScrapper<T> implements CachableWebScrapper<T> {
 
     private final URL url;
     private final HttpBrowser browser;
+    private final Jerry baseDocument;
 
-    protected AbstractWebScrapper(URL url){
+    protected AbstractCacheableWebScrapper(URL url){
         this.url = url;
         this.browser = new HttpBrowser();
+        this.baseDocument = this.downloadBaseDocument();
     }
 
     public URL getUrl() {
@@ -32,20 +34,25 @@ public abstract class AbstractWebScrapper<T> implements WebScrapper<T> {
         return browser;
     }
 
-    @Override
-    public T scrapeData() throws IOException {
-        return this.scrapeFromDoc(this.getDocumentFromWeb());
+    public Jerry getBaseDocument() {
+        return baseDocument;
     }
 
-    protected Jerry getDocumentFromWeb() throws IOException {
-        return this.crawlToTargetDocument(this.getBaseDocument());
+    @Override
+    public T scrapeData() {
+        return this.scrapeFromDoc(this.crawlToTargetDocument(this.getBaseDocument()));
+    }
+
+    @Override
+    public T reScrapeData() {
+        return this.scrapeData();
     }
 
     /**
      * Returns the basic document found at this.url .
      * @return
      */
-    protected Jerry getBaseDocument(){
+    protected Jerry downloadBaseDocument(){
         HttpRequest request = HttpRequest.get(this.getUrl().toString());
         browser.sendRequest(request);
         return Jerry.jerry(this.getBrowser().getPage());

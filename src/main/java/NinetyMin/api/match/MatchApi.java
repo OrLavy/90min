@@ -1,18 +1,16 @@
 package NinetyMin.api.match;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.dropwizard.jackson.JsonSnakeCase;
-import org.jvnet.hk2.annotations.Optional;
 
 /**
  * Created by orlavy on 1/31/17.
  */
 @JsonSnakeCase
-public class Match {
+public class MatchApi {
     String homeTeam;
-    String awayteam;
+    String awayTeam;
     Integer homeScore;
     Integer awayScore;
     String status;
@@ -30,13 +28,13 @@ public class Match {
     }
 
     @JsonProperty
-    public String getAwayteam() {
-        return awayteam;
+    public String getAwayTeam() {
+        return awayTeam;
     }
 
     @JsonProperty
-    public void setAwayteam(String awayteam) {
-        this.awayteam = awayteam;
+    public void setAwayTeam(String awayTeam) {
+        this.awayTeam = awayTeam;
     }
 
     @JsonProperty

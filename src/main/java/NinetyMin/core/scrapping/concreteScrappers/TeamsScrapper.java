@@ -1,23 +1,15 @@
 package NinetyMin.core.scrapping.concreteScrappers;
 
-import NinetyMin.core.scrapping.AbstractWebScrapper;
-import jodd.io.FileUtil;
-import jodd.io.NetUtil;
+import NinetyMin.core.scrapping.AbstractCacheableWebScrapper;
 import jodd.jerry.Jerry;
 import jodd.jerry.JerryFunction;
-import jodd.util.SystemUtil;
 
-import java.io.File;
-import java.io.IOException;
-import java.net.MalformedURLException;
 import java.net.URL;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 
 /**
  * Created by orlavy on 1/30/17.
  */
-public class TeamsScrapper extends AbstractWebScrapper {
+public class TeamsScrapper extends AbstractCacheableWebScrapper {
 
     public TeamsScrapper(URL urlToScrape) {
         super(urlToScrape);
