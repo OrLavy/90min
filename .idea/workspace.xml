@@ -10,9 +10,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/NinetyMin/core/scrapping/concreteScrappers/bbcSports/BbcFootBallScrapper$RowToFootBallMatchMapper.class" afterPath="$PROJECT_DIR$/target/classes/NinetyMin/core/scrapping/concreteScrappers/bbcSports/BbcFootBallScrapper$RowToFootBallMatchMapper.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/NinetyMin/core/scrapping/concreteScrappers/bbcSports/BbcFootBallScrapper.class" afterPath="$PROJECT_DIR$/target/classes/NinetyMin/core/scrapping/concreteScrappers/bbcSports/BbcFootBallScrapper.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/NinetyMin/core/caching/MatchesDataCacher.java" afterPath="$PROJECT_DIR$/src/main/java/NinetyMin/core/caching/MatchesDataCacher.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/NinetyMin/core/managed/ScrappingService.java" afterPath="$PROJECT_DIR$/src/main/java/NinetyMin/core/managed/ScrappingService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/concreteScrappers/bbcSports/BbcFootBallScrapper.java" afterPath="$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/concreteScrappers/bbcSports/BbcFootBallScrapper.java" />
     </list>
     <ignored path="OrLavyProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -873,7 +870,7 @@
       <workItem from="1485522673568" duration="5020000" />
       <workItem from="1485626910469" duration="3152000" />
       <workItem from="1485786014074" duration="39838000" />
-      <workItem from="1485902657267" duration="6234000" />
+      <workItem from="1485902657267" duration="6246000" />
     </task>
     <task id="LOCAL-00001" summary="Basic versionn of scrapping">
       <created>1485870408668</created>
@@ -910,11 +907,18 @@
       <option name="project" value="LOCAL" />
       <updated>1485954916042</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fixed LateNIght DRY mistakes 2">
+      <created>1485956679937</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1485956679937</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54244000" />
+    <option name="totallyTimeSpent" value="54256000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -976,7 +980,8 @@
     <MESSAGE value="Working version of caching&#10;" />
     <MESSAGE value="Fixed All bugs&#10;" />
     <MESSAGE value="Fixed LateNIght DRY mistakes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed LateNIght DRY mistakes" />
+    <MESSAGE value="Fixed LateNIght DRY mistakes 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed LateNIght DRY mistakes 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
