@@ -17,7 +17,7 @@ import java.util.stream.Stream;
 /**
  * Created by orlavy on 1/31/17.
  */
-public class BbcFootBallScrapper extends AbstractCacheableWebScrapper<List<FootBallMatch>> {
+public class BbcFootBallScrapper extends AbstractCacheableWebScrapper<List<FootBallMatch>,FootBallTournament> {
 
     FootBallTournament footBallTournament;
     MatchStatus matchStatus;
@@ -53,6 +53,13 @@ public class BbcFootBallScrapper extends AbstractCacheableWebScrapper<List<FootB
             return true;
         });
         return matches;
+    }
+
+    @Override
+    public List<FootBallMatch> reScrapeData(FootBallTournament footBallTournament) {
+        this.setFootBallTournament(footBallTournament == null ?
+                this.getFootBallTournament() : footBallTournament );
+        return this.reScrapeData();
     }
 
     @Override

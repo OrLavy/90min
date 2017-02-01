@@ -2,26 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15646a83-be09-486b-ae3f-339b86ceb2b3" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/concreteScrappers/PremiereLeagueScrapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/NinetyMin/core/scrapping/PlScrapper$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/NinetyMin/core/scrapping/PlScrapper$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/NinetyMin/core/scrapping/PlScrapper.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/NinetyMin/core/scrapping/concreteScrappers/PremiereLeagueScrapper.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/NinetyMin/OrLavyApplication.class" afterPath="$PROJECT_DIR$/target/classes/NinetyMin/OrLavyApplication.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/NinetyMin/api/match/MatchApi.class" afterPath="$PROJECT_DIR$/target/classes/NinetyMin/api/match/MatchApi.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/NinetyMin/core/FootBallMatch/FootBallMatch.class" afterPath="$PROJECT_DIR$/target/classes/NinetyMin/core/FootBallMatch/FootBallMatch.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/NinetyMin/core/FootBallMatch/MatchStatus.class" afterPath="$PROJECT_DIR$/target/classes/NinetyMin/core/FootBallMatch/MatchStatus.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/NinetyMin/core/managed/ScrappingService.class" afterPath="$PROJECT_DIR$/target/classes/NinetyMin/core/managed/ScrappingService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/NinetyMin/core/scrapping/concreteScrappers/bbcSports/BbcFootBallScrapper$RowToFootBallMatchMapper.class" afterPath="$PROJECT_DIR$/target/classes/NinetyMin/core/scrapping/concreteScrappers/bbcSports/BbcFootBallScrapper$RowToFootBallMatchMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/NinetyMin/core/scrapping/concreteScrappers/bbcSports/BbcFootBallScrapper.class" afterPath="$PROJECT_DIR$/target/classes/NinetyMin/core/scrapping/concreteScrappers/bbcSports/BbcFootBallScrapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/NinetyMin/resources/TeamDataResource.class" afterPath="$PROJECT_DIR$/target/classes/NinetyMin/resources/TeamDataResource.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/NinetyMin/resources/TournamentDataResource.class" afterPath="$PROJECT_DIR$/target/classes/NinetyMin/resources/TournamentDataResource.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/NinetyMin/core/FootBallMatch/MatchStatus.java" afterPath="$PROJECT_DIR$/src/main/java/NinetyMin/core/FootBallMatch/MatchStatus.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/NinetyMin/core/FootBallMatch/FootBallTournament.java" afterPath="$PROJECT_DIR$/src/main/java/NinetyMin/core/FootBallMatch/FootBallTournament.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/NinetyMin/core/managed/CachaingService.java" afterPath="$PROJECT_DIR$/src/main/java/NinetyMin/core/managed/CachaingService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/NinetyMin/core/managed/ScrappingService.java" afterPath="$PROJECT_DIR$/src/main/java/NinetyMin/core/managed/ScrappingService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/AbstractCacheableWebScrapper.java" afterPath="$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/AbstractCacheableWebScrapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/CachableWebScrapper.java" afterPath="$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/CachableWebScrapper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/concreteScrappers/bbcSports/BbcFootBallScrapper.java" afterPath="$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/concreteScrappers/bbcSports/BbcFootBallScrapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/NinetyMin/resources/TeamDataResource.java" afterPath="$PROJECT_DIR$/src/main/java/NinetyMin/resources/TeamDataResource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/NinetyMin/resources/TournamentDataResource.java" afterPath="$PROJECT_DIR$/src/main/java/NinetyMin/resources/TournamentDataResource.java" />
     </list>
     <ignored path="OrLavyProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,43 +27,41 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="DatabaseView">
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="OrLavyProject" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MatchCacher.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/NinetyMin/core/caching/MatchCacher.java">
+      <file leaf-file-name="ScrappingService.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/NinetyMin/core/managed/ScrappingService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="65">
-              <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+            <state relative-caret-position="157">
+              <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TournamentDataResource.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/NinetyMin/resources/TournamentDataResource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="79">
-              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MatchStatus.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/NinetyMin/core/FootBallMatch/MatchStatus.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#ScrappingService#0" expanded="false" />
+                <element signature="method#ScrappingService#0;class#ScrappingService#0" expanded="false" />
+                <element signature="method#start#0;class#ScrappingService#0" expanded="false" />
+                <element signature="method#stop#0;class#ScrappingService#0" expanded="false" />
+                <element signature="docComment;method#scrapeAndCacheData#0;class#ScrappingService#0" expanded="false" />
+                <element signature="method#scrapeAndCacheData#0;class#ScrappingService#0" expanded="false" />
+                <element signature="method#scrapeAllMatches#0;class#ScrappingService#0" expanded="false" />
+                <element signature="docComment;method#scrapeForGivenLeagues#0;class#ScrappingService#0" expanded="false" />
+                <element signature="method#scrapeForGivenLeagues#0;class#ScrappingService#0" expanded="false" />
+                <element signature="method#getScrappersForUrls#0;class#ScrappingService#0" expanded="false" />
+                <element signature="method#createURLSet#0;class#ScrappingService#0" expanded="false" />
+                <element signature="docComment;class#UrlToMatchStatusMapper#0;class#ScrappingService#0" expanded="false" />
+                <element signature="class#UrlToMatchStatusMapper#0;class#ScrappingService#0" expanded="false" />
+                <element signature="e#4512#4513#0" expanded="true" />
+                <element signature="e#4568#4569#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -119,9 +104,7 @@
         <option value="$PROJECT_DIR$/src/main/java/NinetyMin/api/Match.java" />
         <option value="$PROJECT_DIR$/src/main/java/NinetyMin/api/match/TeamScore.java" />
         <option value="$PROJECT_DIR$/src/main/java/NinetyMin/api/match/Match.java" />
-        <option value="$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/CachableWebScrapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/WebScrapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/AbstractCacheableWebScrapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/NinetyMin/core/FootBallMatch/FootBallLeagues.java" />
         <option value="$PROJECT_DIR$/src/main/java/NinetyMin/core/FootBallMatch/MatchType.java" />
         <option value="$PROJECT_DIR$/src/main/java/NinetyMin/core/FootBallMatch/FootBallLeague.java" />
@@ -133,17 +116,20 @@
         <option value="$PROJECT_DIR$/src/main/java/NinetyMin/core/caching/DataCacher.java" />
         <option value="$PROJECT_DIR$/src/main/java/NinetyMin/api/team/TeamIdentifier.java" />
         <option value="$PROJECT_DIR$/src/main/java/NinetyMin/core/caching/MatchCacher.java" />
-        <option value="$PROJECT_DIR$/src/main/java/NinetyMin/core/managed/CachaingService.java" />
         <option value="$PROJECT_DIR$/src/main/java/NinetyMin/api/team/TeamIdentifierApi.java" />
         <option value="$PROJECT_DIR$/src/main/java/NinetyMin/OrLavyApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/NinetyMin/resources/TeamIdentifiersResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/NinetyMin/api/match/MatchApi.java" />
-        <option value="$PROJECT_DIR$/src/main/java/NinetyMin/core/managed/ScrappingService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/concreteScrappers/bbcSports/BbcFootBallScrapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/NinetyMin/resources/TeamDataResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/NinetyMin/core/caching/MatchesDataCacher.java" />
         <option value="$PROJECT_DIR$/src/main/java/NinetyMin/resources/TournamentDataResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/NinetyMin/core/FootBallMatch/MatchStatus.java" />
+        <option value="$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/CachableWebScrapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/AbstractCacheableWebScrapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/concreteScrappers/bbcSports/BbcFootBallScrapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/NinetyMin/core/FootBallMatch/FootBallTournament.java" />
+        <option value="$PROJECT_DIR$/src/main/java/NinetyMin/core/managed/CachaingService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/NinetyMin/core/managed/ScrappingService.java" />
       </list>
     </option>
   </component>
@@ -248,6 +234,10 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -334,6 +324,124 @@
               <option name="myItemId" value="core" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scrapping" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OrLavyProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OrLavyProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NinetyMin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scrapping" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="concreteScrappers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OrLavyProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OrLavyProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NinetyMin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scrapping" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="concreteScrappers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bbcSports" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OrLavyProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OrLavyProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NinetyMin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="managed" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -366,6 +474,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="FootBallMatch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OrLavyProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OrLavyProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NinetyMin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -432,49 +570,11 @@
               <option name="myItemId" value="api" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="team" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OrLavyProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OrLavyProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NinetyMin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="match" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -482,7 +582,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Temp" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
@@ -958,7 +1058,8 @@
       <updated>1485522659380</updated>
       <workItem from="1485522673568" duration="5020000" />
       <workItem from="1485626910469" duration="3152000" />
-      <workItem from="1485786014074" duration="39561000" />
+      <workItem from="1485786014074" duration="39838000" />
+      <workItem from="1485902657267" duration="4455000" />
     </task>
     <task id="LOCAL-00001" summary="Basic versionn of scrapping">
       <created>1485870408668</created>
@@ -981,11 +1082,18 @@
       <option name="project" value="LOCAL" />
       <updated>1485897969987</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fixed All bugs&#10;">
+      <created>1485902333904</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1485902333904</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47733000" />
+    <option name="totallyTimeSpent" value="52465000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1008,25 +1116,25 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988048" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3018576" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33386454" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988048" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988048" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3993808" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1045,11 +1153,12 @@
     <MESSAGE value="Basic versionn of scrapping" />
     <MESSAGE value="Finished scrapping" />
     <MESSAGE value="Working version of caching&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working version of caching&#10;" />
+    <MESSAGE value="Fixed All bugs&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed All bugs&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="29" />
+      <option name="time" value="34" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1058,13 +1167,43 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/NinetyMin/core/caching/MatchCacher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/NinetyMin/resources/TournamentDataResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/NinetyMin/core/FootBallMatch/MatchStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/NinetyMin/OrLavyConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
-            <element signature="e#533#534#0" expanded="true" />
-            <element signature="e#582#583#0" expanded="true" />
+            <element signature="e#533#534#0" expanded="false" />
+            <element signature="e#582#583#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1081,7 +1220,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="27" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="method#makeList#0;class#TeamDataResource#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1090,7 +1232,7 @@
         <state relative-caret-position="126">
           <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1107,7 +1249,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1116,8 +1257,8 @@
         <state relative-caret-position="72">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
-            <element signature="e#533#534#0" expanded="true" />
-            <element signature="e#582#583#0" expanded="true" />
+            <element signature="e#533#534#0" expanded="false" />
+            <element signature="e#582#583#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1134,7 +1275,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="27" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="method#makeList#0;class#TeamDataResource#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1143,7 +1287,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1152,7 +1296,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1247,9 +1390,10 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="0.11567965633629948" x="790.1644562334218" y="1659.5" />
+          <settings layout="Hierarchic Group" zoom="0.11567965633629948" x="790.0" y="1660.0" />
           <SelectedNodes />
           <Categories />
+          <SCOPE>All</SCOPE>
           <VISIBILITY>All</VISIBILITY>
         </state>
       </provider>
@@ -1267,8 +1411,8 @@
         <state relative-caret-position="126">
           <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
           <folding>
-            <element signature="e#533#534#0" expanded="true" />
-            <element signature="e#582#583#0" expanded="true" />
+            <element signature="e#533#534#0" expanded="false" />
+            <element signature="e#582#583#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1295,36 +1439,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-63">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#1120#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/NinetyMin/api/match/TeamScore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/PlScrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="36" column="29" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/CachableWebScrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/NinetyMin/api/match/TeamScore.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/PlScrapper.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/WebScrapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -1333,34 +1452,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/AbstractCacheableWebScrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="65" column="20" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#AbstractCacheableWebScrapper#0;class#AbstractCacheableWebScrapper#0" expanded="false" />
-            <element signature="docComment;method#downloadBaseDocument#0;class#AbstractCacheableWebScrapper#0" expanded="false" />
-            <element signature="method#downloadBaseDocument#0;class#AbstractCacheableWebScrapper#0" expanded="false" />
-            <element signature="docComment;method#crawlToTargetDocument#0;class#AbstractCacheableWebScrapper#0" expanded="false" />
-            <element signature="e#1587#1588#0" expanded="true" />
-            <element signature="e#1613#1614#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/NinetyMin/core/FootBallMatch/TeamScore.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
           <folding>
-            <element signature="e#197#198#0" expanded="true" />
-            <element signature="e#237#238#0" expanded="true" />
-            <element signature="e#269#270#0" expanded="true" />
-            <element signature="e#302#303#0" expanded="true" />
-            <element signature="e#330#331#0" expanded="true" />
-            <element signature="e#373#374#0" expanded="true" />
-            <element signature="e#407#408#0" expanded="true" />
+            <element signature="e#197#198#0" expanded="false" />
+            <element signature="e#237#238#0" expanded="false" />
+            <element signature="e#269#270#0" expanded="false" />
+            <element signature="e#302#303#0" expanded="false" />
+            <element signature="e#330#331#0" expanded="false" />
+            <element signature="e#373#374#0" expanded="false" />
+            <element signature="e#407#408#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1393,19 +1496,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="19" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/NinetyMin/core/managed/CachaingService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#611#612#0" expanded="true" />
-            <element signature="e#656#657#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1414,7 +1504,7 @@
         <state relative-caret-position="162">
           <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1432,25 +1522,18 @@
         <state relative-caret-position="-709">
           <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/concreteScrappers/PremiereLeagueScrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/concreteScrappers/PremiereLeagueScrapper.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/concreteScrappers/TeamsScrapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
           <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1460,32 +1543,7 @@
         <state relative-caret-position="124">
           <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/NinetyMin/core/FootBallMatch/FootBallTournament.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/concreteScrappers/bbcSports/BbcFootBallScrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="94" column="49" selection-start-line="94" selection-start-column="49" selection-end-line="94" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#BbcFootBallScrapper#0;class#BbcFootBallScrapper#0" expanded="false" />
-            <element signature="method#scrapeFromDoc#0;class#BbcFootBallScrapper#0" expanded="false" />
-            <element signature="method#crawlToTargetDocument#0;class#BbcFootBallScrapper#0" expanded="false" />
-            <element signature="method#createFilterByTournamentRequest#0;class#BbcFootBallScrapper#0" expanded="false" />
-            <element signature="method#setFormParameters#0;class#BbcFootBallScrapper#0" expanded="false" />
-            <element signature="method#findTournamentFilterValue#0;class#BbcFootBallScrapper#0" expanded="false" />
-            <element signature="method#findTournamentOptionTag#0;class#BbcFootBallScrapper#0" expanded="false" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1503,50 +1561,37 @@
         <state relative-caret-position="157">
           <caret line="25" column="79" selection-start-line="25" selection-start-column="79" selection-end-line="25" selection-end-column="79" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="method#makeList#0;class#TeamDataResource#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/NinetyMin/core/managed/ScrappingService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="68" column="34" selection-start-line="68" selection-start-column="34" selection-end-line="68" selection-end-column="34" />
-          <folding>
-            <element signature="method#scrapeAllMatches#0;class#ScrappingService#0" expanded="false" />
-            <element signature="method#scrapeFixturesMatches#0;class#ScrappingService#0" expanded="false" />
-            <element signature="method#scrapeForGivenLeagues#0;class#ScrappingService#0" expanded="false" />
-            <element signature="method#scrapeByLeague#0;class#ScrappingService#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/NinetyMin/core/caching/MatchesDataCacher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="47" column="65" selection-start-line="47" selection-start-column="65" selection-end-line="47" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#MatchesDataCacher#0;class#MatchesDataCacher#0" expanded="false" />
-            <element signature="method#addMatches#0;class#MatchesDataCacher#0" expanded="false" />
-            <element signature="method#filterStreamByStatusAndCollectToList#0;class#MatchesDataCacher#0" expanded="false" />
-            <element signature="e#3427#3428#0" expanded="true" />
-            <element signature="e#3518#3519#0" expanded="true" />
-            <element signature="method#getAllTeamIdentifiers#0;class#TeamIdManager#0;class#MatchesDataCacher#0" expanded="false" />
-            <element signature="method#addIfTeamDoesNotExist#0;class#TeamIdManager#0;class#MatchesDataCacher#0" expanded="false" />
-            <element signature="method#addNewTeam#0;class#TeamIdManager#0;class#MatchesDataCacher#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/NinetyMin/core/caching/MatchCacher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
+        <state relative-caret-position="198">
           <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/NinetyMin/core/FootBallMatch/MatchStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/banner.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1555,17 +1600,113 @@
         <state relative-caret-position="79">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/NinetyMin/core/FootBallMatch/MatchStatus.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/AbstractCacheableWebScrapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+        <state relative-caret-position="381">
+          <caret line="52" column="34" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#AbstractCacheableWebScrapper#0;class#AbstractCacheableWebScrapper#0" expanded="false" />
+            <element signature="e#1070#1071#0" expanded="true" />
+            <element signature="e#1110#1111#0" expanded="true" />
+            <element signature="e#1177#1178#0" expanded="true" />
+            <element signature="e#1219#1220#0" expanded="true" />
+            <element signature="docComment;method#downloadBaseDocument#0;class#AbstractCacheableWebScrapper#0" expanded="false" />
+            <element signature="method#downloadBaseDocument#0;class#AbstractCacheableWebScrapper#0" expanded="false" />
+            <element signature="docComment;method#crawlToTargetDocument#0;class#AbstractCacheableWebScrapper#0" expanded="false" />
+            <element signature="e#1700#1701#0" expanded="true" />
+            <element signature="e#1726#1727#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/CachableWebScrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/concreteScrappers/bbcSports/BbcFootBallScrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#BbcFootBallScrapper#0;class#BbcFootBallScrapper#0" expanded="false" />
+            <element signature="method#scrapeFromDoc#0;class#BbcFootBallScrapper#0" expanded="false" />
+            <element signature="method#reScrapeData#0;class#BbcFootBallScrapper#0" expanded="false" />
+            <element signature="method#crawlToTargetDocument#0;class#BbcFootBallScrapper#0" expanded="false" />
+            <element signature="method#createFilterByTournamentRequest#0;class#BbcFootBallScrapper#0" expanded="false" />
+            <element signature="method#setFormParameters#0;class#BbcFootBallScrapper#0" expanded="false" />
+            <element signature="method#findTournamentFilterValue#0;class#BbcFootBallScrapper#0" expanded="false" />
+            <element signature="method#findTournamentOptionTag#0;class#BbcFootBallScrapper#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/NinetyMin/core/FootBallMatch/FootBallTournament.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="59" selection-start-line="6" selection-start-column="59" selection-end-line="6" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/NinetyMin/core/caching/MatchesDataCacher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="47" column="65" selection-start-line="47" selection-start-column="65" selection-end-line="47" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#MatchesDataCacher#0;class#MatchesDataCacher#0" expanded="false" />
+            <element signature="method#addMatches#0;class#MatchesDataCacher#0" expanded="false" />
+            <element signature="method#filterStreamByStatusAndCollectToList#0;class#MatchesDataCacher#0" expanded="false" />
+            <element signature="method#getAllTeamIdentifiers#0;class#TeamIdManager#0;class#MatchesDataCacher#0" expanded="false" />
+            <element signature="method#addIfTeamDoesNotExist#0;class#TeamIdManager#0;class#MatchesDataCacher#0" expanded="false" />
+            <element signature="method#addNewTeam#0;class#TeamIdManager#0;class#MatchesDataCacher#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/NinetyMin/core/managed/CachaingService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#611#612#0" expanded="true" />
+            <element signature="e#656#657#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/NinetyMin/core/managed/ScrappingService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#ScrappingService#0" expanded="false" />
+            <element signature="method#ScrappingService#0;class#ScrappingService#0" expanded="false" />
+            <element signature="method#start#0;class#ScrappingService#0" expanded="false" />
+            <element signature="method#stop#0;class#ScrappingService#0" expanded="false" />
+            <element signature="docComment;method#scrapeAndCacheData#0;class#ScrappingService#0" expanded="false" />
+            <element signature="method#scrapeAndCacheData#0;class#ScrappingService#0" expanded="false" />
+            <element signature="method#scrapeAllMatches#0;class#ScrappingService#0" expanded="false" />
+            <element signature="docComment;method#scrapeForGivenLeagues#0;class#ScrappingService#0" expanded="false" />
+            <element signature="method#scrapeForGivenLeagues#0;class#ScrappingService#0" expanded="false" />
+            <element signature="method#getScrappersForUrls#0;class#ScrappingService#0" expanded="false" />
+            <element signature="method#createURLSet#0;class#ScrappingService#0" expanded="false" />
+            <element signature="docComment;class#UrlToMatchStatusMapper#0;class#ScrappingService#0" expanded="false" />
+            <element signature="class#UrlToMatchStatusMapper#0;class#ScrappingService#0" expanded="false" />
+            <element signature="e#4512#4513#0" expanded="true" />
+            <element signature="e#4568#4569#0" expanded="true" />
           </folding>
         </state>
       </provider>

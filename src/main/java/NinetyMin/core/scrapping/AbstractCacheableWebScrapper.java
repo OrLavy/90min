@@ -14,7 +14,7 @@ import java.net.URL;
 /**
  * Created by orlavy on 1/30/17.
  */
-public abstract class AbstractCacheableWebScrapper<T> implements CachableWebScrapper<T> {
+public abstract class AbstractCacheableWebScrapper<T,R> implements CachableWebScrapper<T,R> {
 
     private final URL url;
     private final HttpBrowser browser;
@@ -46,6 +46,11 @@ public abstract class AbstractCacheableWebScrapper<T> implements CachableWebScra
     @Override
     public T reScrapeData() {
         return this.scrapeData();
+    }
+
+    @Override
+    public T reScrapeData(R reScrappingParameter) {
+        return this.reScrapeData();
     }
 
     /**
