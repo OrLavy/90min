@@ -92,6 +92,12 @@ public class BbcFootBallScrapper extends AbstractCacheableWebScrapper<List<FootB
         private final String UNDECIDED_TEAM = "undecided team";
 
 
+        /**
+         * All queries are hard coded for sake of assignment simplicity.
+         * IRL will be read from an outside file.
+         * @param tr
+         * @return
+         */
         @Override
         public FootBallMatch apply(Jerry tr) {
             FootBallMatch footBallMatch = new FootBallMatch();
@@ -112,9 +118,23 @@ public class BbcFootBallScrapper extends AbstractCacheableWebScrapper<List<FootB
             return footBallMatch;
         }
 
+        private String extractTrimmedString(Jerry tr, String query,String ... alternativeQueries){
+            String value = tr.$(query).text().trim();
+
+            if (value.isEmpty()){
+                for (String alterNativeQuery : alternativeQueries){
+                    value = extractTrimmedString(tr, alterNativeQuery);
+                    if (!value.isEmpty()){
+                        break;
+                    }
+                }
+            }
+
+            return value;
+        }
+
         private String extractHomeTeam(Jerry tr){
-            String standardTeamHomeName = tr.$(".team-home a").text().trim();
-            return standardTeamHomeName.isEmpty() ? tr.$(".team-away").text().trim() : standardTeamHomeName;
+            return extractTrimmedString(tr,".team-home a", ".team-away");
         }
 
         private Integer extractHomeScore(Jerry tr){
@@ -122,8 +142,7 @@ public class BbcFootBallScrapper extends AbstractCacheableWebScrapper<List<FootB
         }
 
         private String extractAwayTeam(Jerry tr){
-            String teamAwayName = tr.$(".team-away a").text().trim();
-            return teamAwayName.isEmpty() ? tr.$(".team-away").text().trim() : teamAwayName;
+            return  extractTrimmedString(tr, ".team-away a", ".team-away");
         }
 
         private Integer extractAwayScore(Jerry tr){
@@ -131,11 +150,11 @@ public class BbcFootBallScrapper extends AbstractCacheableWebScrapper<List<FootB
         }
 
         private String extractStartTime(Jerry tr){
-            return tr.$(".time,.kickoff").text().trim();
+            return extractTrimmedString(tr,".time,.kickoff");
         }
 
         private int[] extractGameScore(Jerry tr){
-            String scoreText = tr.$(".score abbr").text();
+            String scoreText = extractTrimmedString(tr,".score abbr");
             Stream<String> scoreStream = Arrays.stream(scoreText.trim().split("-"));
             return scoreStream.mapToInt(Integer::valueOf).toArray();
         }

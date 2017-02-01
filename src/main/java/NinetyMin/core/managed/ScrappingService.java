@@ -79,7 +79,6 @@ public class ScrappingService implements Managed{
         return scrappedMatches;
     }
 
-
     private List<CachableWebScrapper<List<FootBallMatch>,FootBallTournament>>
     getScrappersForUrls(Set<URL> urls){
 

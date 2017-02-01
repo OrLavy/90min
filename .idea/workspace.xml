@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15646a83-be09-486b-ae3f-339b86ceb2b3" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/NinetyMin/core/FootBallMatch/FootBallTournament.class" afterPath="$PROJECT_DIR$/target/classes/NinetyMin/core/FootBallMatch/FootBallTournament.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/NinetyMin/core/managed/CachaingService.class" afterPath="$PROJECT_DIR$/target/classes/NinetyMin/core/managed/CachaingService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/NinetyMin/core/managed/ScrappingService.class" afterPath="$PROJECT_DIR$/target/classes/NinetyMin/core/managed/ScrappingService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/NinetyMin/core/scrapping/AbstractCacheableWebScrapper.class" afterPath="$PROJECT_DIR$/target/classes/NinetyMin/core/scrapping/AbstractCacheableWebScrapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/NinetyMin/core/scrapping/CachableWebScrapper.class" afterPath="$PROJECT_DIR$/target/classes/NinetyMin/core/scrapping/CachableWebScrapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/NinetyMin/core/scrapping/concreteScrappers/bbcSports/BbcFootBallScrapper$RowToFootBallMatchMapper.class" afterPath="$PROJECT_DIR$/target/classes/NinetyMin/core/scrapping/concreteScrappers/bbcSports/BbcFootBallScrapper$RowToFootBallMatchMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/NinetyMin/core/scrapping/concreteScrappers/bbcSports/BbcFootBallScrapper.class" afterPath="$PROJECT_DIR$/target/classes/NinetyMin/core/scrapping/concreteScrappers/bbcSports/BbcFootBallScrapper.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/NinetyMin/core/FootBallMatch/FootBallTournament.java" afterPath="$PROJECT_DIR$/src/main/java/NinetyMin/core/FootBallMatch/FootBallTournament.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/NinetyMin/core/managed/CachaingService.java" afterPath="$PROJECT_DIR$/src/main/java/NinetyMin/core/managed/CachaingService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/NinetyMin/core/caching/MatchesDataCacher.java" afterPath="$PROJECT_DIR$/src/main/java/NinetyMin/core/caching/MatchesDataCacher.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/NinetyMin/core/managed/ScrappingService.java" afterPath="$PROJECT_DIR$/src/main/java/NinetyMin/core/managed/ScrappingService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/AbstractCacheableWebScrapper.java" afterPath="$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/AbstractCacheableWebScrapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/CachableWebScrapper.java" afterPath="$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/CachableWebScrapper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/concreteScrappers/bbcSports/BbcFootBallScrapper.java" afterPath="$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/concreteScrappers/bbcSports/BbcFootBallScrapper.java" />
     </list>
     <ignored path="OrLavyProject.iws" />
@@ -41,27 +45,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ScrappingService.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/NinetyMin/core/managed/ScrappingService.java">
+      <file leaf-file-name="MatchesDataCacher.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/NinetyMin/core/caching/MatchesDataCacher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+            <state relative-caret-position="161">
+              <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
               <folding>
-                <element signature="docComment;class#ScrappingService#0" expanded="false" />
-                <element signature="method#ScrappingService#0;class#ScrappingService#0" expanded="false" />
-                <element signature="method#start#0;class#ScrappingService#0" expanded="false" />
-                <element signature="method#stop#0;class#ScrappingService#0" expanded="false" />
-                <element signature="docComment;method#scrapeAndCacheData#0;class#ScrappingService#0" expanded="false" />
-                <element signature="method#scrapeAndCacheData#0;class#ScrappingService#0" expanded="false" />
-                <element signature="method#scrapeAllMatches#0;class#ScrappingService#0" expanded="false" />
-                <element signature="docComment;method#scrapeForGivenLeagues#0;class#ScrappingService#0" expanded="false" />
-                <element signature="method#scrapeForGivenLeagues#0;class#ScrappingService#0" expanded="false" />
-                <element signature="method#getScrappersForUrls#0;class#ScrappingService#0" expanded="false" />
-                <element signature="method#createURLSet#0;class#ScrappingService#0" expanded="false" />
-                <element signature="docComment;class#UrlToMatchStatusMapper#0;class#ScrappingService#0" expanded="false" />
-                <element signature="class#UrlToMatchStatusMapper#0;class#ScrappingService#0" expanded="false" />
-                <element signature="e#4512#4513#0" expanded="true" />
-                <element signature="e#4568#4569#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="method#MatchesDataCacher#0;class#MatchesDataCacher#0" expanded="false" />
+                <element signature="method#addMatches#0;class#MatchesDataCacher#0" expanded="false" />
+                <element signature="class#TeamIdManager#0;class#MatchesDataCacher#0" expanded="false" />
+                <element signature="method#getAllTeamIdentifiers#0;class#TeamIdManager#0;class#MatchesDataCacher#0" expanded="false" />
+                <element signature="method#addIfTeamDoesNotExist#0;class#TeamIdManager#0;class#MatchesDataCacher#0" expanded="false" />
+                <element signature="method#addNewTeam#0;class#TeamIdManager#0;class#MatchesDataCacher#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -121,15 +117,15 @@
         <option value="$PROJECT_DIR$/src/main/java/NinetyMin/resources/TeamIdentifiersResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/NinetyMin/api/match/MatchApi.java" />
         <option value="$PROJECT_DIR$/src/main/java/NinetyMin/resources/TeamDataResource.java" />
-        <option value="$PROJECT_DIR$/src/main/java/NinetyMin/core/caching/MatchesDataCacher.java" />
         <option value="$PROJECT_DIR$/src/main/java/NinetyMin/resources/TournamentDataResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/NinetyMin/core/FootBallMatch/MatchStatus.java" />
         <option value="$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/CachableWebScrapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/AbstractCacheableWebScrapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/concreteScrappers/bbcSports/BbcFootBallScrapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/NinetyMin/core/FootBallMatch/FootBallTournament.java" />
         <option value="$PROJECT_DIR$/src/main/java/NinetyMin/core/managed/CachaingService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/concreteScrappers/bbcSports/BbcFootBallScrapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/NinetyMin/core/managed/ScrappingService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/NinetyMin/core/caching/MatchesDataCacher.java" />
       </list>
     </option>
   </component>
@@ -292,188 +288,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OrLavyProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OrLavyProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NinetyMin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scrapping" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OrLavyProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OrLavyProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NinetyMin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scrapping" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="concreteScrappers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OrLavyProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OrLavyProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NinetyMin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scrapping" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="concreteScrappers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bbcSports" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OrLavyProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OrLavyProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NinetyMin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="managed" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OrLavyProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OrLavyProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NinetyMin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="core" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FootBallMatch" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1059,7 +873,7 @@
       <workItem from="1485522673568" duration="5020000" />
       <workItem from="1485626910469" duration="3152000" />
       <workItem from="1485786014074" duration="39838000" />
-      <workItem from="1485902657267" duration="4455000" />
+      <workItem from="1485902657267" duration="6234000" />
     </task>
     <task id="LOCAL-00001" summary="Basic versionn of scrapping">
       <created>1485870408668</created>
@@ -1089,11 +903,18 @@
       <option name="project" value="LOCAL" />
       <updated>1485902333904</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fixed LateNIght DRY mistakes">
+      <created>1485954916042</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1485954916042</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52465000" />
+    <option name="totallyTimeSpent" value="54244000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1154,11 +975,12 @@
     <MESSAGE value="Finished scrapping" />
     <MESSAGE value="Working version of caching&#10;" />
     <MESSAGE value="Fixed All bugs&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed All bugs&#10;" />
+    <MESSAGE value="Fixed LateNIght DRY mistakes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed LateNIght DRY mistakes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="34" />
+      <option name="time" value="38" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1605,73 +1427,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/AbstractCacheableWebScrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="52" column="34" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#AbstractCacheableWebScrapper#0;class#AbstractCacheableWebScrapper#0" expanded="false" />
-            <element signature="e#1070#1071#0" expanded="true" />
-            <element signature="e#1110#1111#0" expanded="true" />
-            <element signature="e#1177#1178#0" expanded="true" />
-            <element signature="e#1219#1220#0" expanded="true" />
-            <element signature="docComment;method#downloadBaseDocument#0;class#AbstractCacheableWebScrapper#0" expanded="false" />
-            <element signature="method#downloadBaseDocument#0;class#AbstractCacheableWebScrapper#0" expanded="false" />
-            <element signature="docComment;method#crawlToTargetDocument#0;class#AbstractCacheableWebScrapper#0" expanded="false" />
-            <element signature="e#1700#1701#0" expanded="true" />
-            <element signature="e#1726#1727#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/CachableWebScrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/concreteScrappers/bbcSports/BbcFootBallScrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#BbcFootBallScrapper#0;class#BbcFootBallScrapper#0" expanded="false" />
-            <element signature="method#scrapeFromDoc#0;class#BbcFootBallScrapper#0" expanded="false" />
-            <element signature="method#reScrapeData#0;class#BbcFootBallScrapper#0" expanded="false" />
-            <element signature="method#crawlToTargetDocument#0;class#BbcFootBallScrapper#0" expanded="false" />
-            <element signature="method#createFilterByTournamentRequest#0;class#BbcFootBallScrapper#0" expanded="false" />
-            <element signature="method#setFormParameters#0;class#BbcFootBallScrapper#0" expanded="false" />
-            <element signature="method#findTournamentFilterValue#0;class#BbcFootBallScrapper#0" expanded="false" />
-            <element signature="method#findTournamentOptionTag#0;class#BbcFootBallScrapper#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/NinetyMin/core/FootBallMatch/FootBallTournament.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="59" selection-start-line="6" selection-start-column="59" selection-end-line="6" selection-end-column="59" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/NinetyMin/core/caching/MatchesDataCacher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="47" column="65" selection-start-line="47" selection-start-column="65" selection-end-line="47" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#MatchesDataCacher#0;class#MatchesDataCacher#0" expanded="false" />
-            <element signature="method#addMatches#0;class#MatchesDataCacher#0" expanded="false" />
-            <element signature="method#filterStreamByStatusAndCollectToList#0;class#MatchesDataCacher#0" expanded="false" />
-            <element signature="method#getAllTeamIdentifiers#0;class#TeamIdManager#0;class#MatchesDataCacher#0" expanded="false" />
-            <element signature="method#addIfTeamDoesNotExist#0;class#TeamIdManager#0;class#MatchesDataCacher#0" expanded="false" />
-            <element signature="method#addNewTeam#0;class#TeamIdManager#0;class#MatchesDataCacher#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1687,10 +1447,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/concreteScrappers/bbcSports/BbcFootBallScrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="139" column="0" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#BbcFootBallScrapper#0;class#BbcFootBallScrapper#0" expanded="false" />
+            <element signature="method#reScrapeData#0;class#BbcFootBallScrapper#0" expanded="false" />
+            <element signature="method#crawlToTargetDocument#0;class#BbcFootBallScrapper#0" expanded="false" />
+            <element signature="method#createFilterByTournamentRequest#0;class#BbcFootBallScrapper#0" expanded="false" />
+            <element signature="method#setFormParameters#0;class#BbcFootBallScrapper#0" expanded="false" />
+            <element signature="method#findTournamentFilterValue#0;class#BbcFootBallScrapper#0" expanded="false" />
+            <element signature="method#findTournamentOptionTag#0;class#BbcFootBallScrapper#0" expanded="false" />
+            <element signature="method#apply#0;class#RowToFootBallMatchMapper#0;class#BbcFootBallScrapper#0" expanded="false" />
+            <element signature="method#extractTrimmedString#0;class#RowToFootBallMatchMapper#0;class#BbcFootBallScrapper#0" expanded="false" />
+            <element signature="method#extractGameScore#0;class#RowToFootBallMatchMapper#0;class#BbcFootBallScrapper#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/NinetyMin/core/managed/ScrappingService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+        <state relative-caret-position="291">
+          <caret line="80" column="4" selection-start-line="80" selection-start-column="4" selection-end-line="80" selection-end-column="4" />
           <folding>
             <element signature="docComment;class#ScrappingService#0" expanded="false" />
             <element signature="method#ScrappingService#0;class#ScrappingService#0" expanded="false" />
@@ -1698,15 +1478,54 @@
             <element signature="method#stop#0;class#ScrappingService#0" expanded="false" />
             <element signature="docComment;method#scrapeAndCacheData#0;class#ScrappingService#0" expanded="false" />
             <element signature="method#scrapeAndCacheData#0;class#ScrappingService#0" expanded="false" />
-            <element signature="method#scrapeAllMatches#0;class#ScrappingService#0" expanded="false" />
             <element signature="docComment;method#scrapeForGivenLeagues#0;class#ScrappingService#0" expanded="false" />
             <element signature="method#scrapeForGivenLeagues#0;class#ScrappingService#0" expanded="false" />
             <element signature="method#getScrappersForUrls#0;class#ScrappingService#0" expanded="false" />
             <element signature="method#createURLSet#0;class#ScrappingService#0" expanded="false" />
             <element signature="docComment;class#UrlToMatchStatusMapper#0;class#ScrappingService#0" expanded="false" />
             <element signature="class#UrlToMatchStatusMapper#0;class#ScrappingService#0" expanded="false" />
-            <element signature="e#4512#4513#0" expanded="true" />
-            <element signature="e#4568#4569#0" expanded="true" />
+            <element signature="e#4511#4512#0" expanded="true" />
+            <element signature="e#4567#4568#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/AbstractCacheableWebScrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="52" column="34" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#AbstractCacheableWebScrapper#0;class#AbstractCacheableWebScrapper#0" expanded="false" />
+            <element signature="e#1177#1178#0" expanded="true" />
+            <element signature="e#1219#1220#0" expanded="true" />
+            <element signature="docComment;method#downloadBaseDocument#0;class#AbstractCacheableWebScrapper#0" expanded="false" />
+            <element signature="method#downloadBaseDocument#0;class#AbstractCacheableWebScrapper#0" expanded="false" />
+            <element signature="docComment;method#crawlToTargetDocument#0;class#AbstractCacheableWebScrapper#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/NinetyMin/core/scrapping/CachableWebScrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/NinetyMin/core/caching/MatchesDataCacher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#MatchesDataCacher#0;class#MatchesDataCacher#0" expanded="false" />
+            <element signature="method#addMatches#0;class#MatchesDataCacher#0" expanded="false" />
+            <element signature="class#TeamIdManager#0;class#MatchesDataCacher#0" expanded="false" />
+            <element signature="method#getAllTeamIdentifiers#0;class#TeamIdManager#0;class#MatchesDataCacher#0" expanded="false" />
+            <element signature="method#addIfTeamDoesNotExist#0;class#TeamIdManager#0;class#MatchesDataCacher#0" expanded="false" />
+            <element signature="method#addNewTeam#0;class#TeamIdManager#0;class#MatchesDataCacher#0" expanded="false" />
           </folding>
         </state>
       </provider>

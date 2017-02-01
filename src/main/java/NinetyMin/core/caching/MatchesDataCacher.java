@@ -4,12 +4,10 @@ import NinetyMin.api.team.TeamIdentifierApi;
 import NinetyMin.core.FootBallMatch.FootBallMatch;
 import NinetyMin.core.FootBallMatch.FootBallTournament;
 import NinetyMin.core.FootBallMatch.MatchStatus;
-import jodd.madvoc.meta.In;
 
 import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.BiFunction;
-import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -20,9 +18,9 @@ public class MatchesDataCacher implements  MatchCacher{
     private final List<FootBallMatch> matches;
     private final TeamIdManager teamIdManager;
 
-    private final BiFunction<FootBallMatch,Optional<MatchStatus>,Boolean> filterByStatus = (match,status) -> status.isPresent() ? match.getStatus() == status.get() : true;
-    private final BiFunction<FootBallMatch,String,Boolean> filterTeamName = (match,name) -> match.getHomeTeam().equalsIgnoreCase(name) || match.getAwayTeam().equalsIgnoreCase(name);
-    private final BiFunction<FootBallMatch,FootBallTournament,Boolean> filterByTournament = (match,tournament) -> match.getTournament() == tournament;
+    private final BiFunction<FootBallMatch,Optional<MatchStatus>,Boolean> _filterByStatus = (match, status) -> status.isPresent() ? match.getStatus() == status.get() : true;
+    private final BiFunction<FootBallMatch,String,Boolean> _filterTeamName = (match, name) -> match.getHomeTeam().equalsIgnoreCase(name) || match.getAwayTeam().equalsIgnoreCase(name);
+    private final BiFunction<FootBallMatch,FootBallTournament,Boolean> _filterByTournament = (match, tournament) -> match.getTournament() == tournament;
 
     public MatchesDataCacher(){
         this.matches = new ArrayList<>();
@@ -46,16 +44,14 @@ public class MatchesDataCacher implements  MatchCacher{
     @Override
     public List<FootBallMatch> getMatchesForTeam(int teamId, Optional<MatchStatus> status) {
         String teamName = this.teamIdManager.getNameById(teamId);
-        return matches.stream().filter(m -> filterTeamName.apply(m,teamName)).
-               filter(m -> filterByStatus.apply(m,status)).
-               collect(Collectors.toList());
 
+        return filterByMatchStatus(filterByTeamName(matches.stream(),teamName),status).
+                collect(Collectors.toList());
     }
 
     @Override
     public List<FootBallMatch> getMatchesForTournament(FootBallTournament footBallTournament, Optional<MatchStatus> status) {
-        return matches.stream().filter(m -> filterByTournament.apply(m,footBallTournament)).
-                filter(m -> filterByStatus.apply(m,status)).
+        return filterByMatchStatus(filterByTournament(matches.stream(),footBallTournament),status).
                 collect(Collectors.toList());
     }
 
@@ -64,8 +60,16 @@ public class MatchesDataCacher implements  MatchCacher{
         return this.teamIdManager.getAllTeamIdentifiers();
     }
 
-    private List<FootBallMatch> filterStreamByStatusAndCollectToList(Stream<FootBallMatch> matchStream,Optional<MatchStatus> status ){
-        return matchStream.filter(m -> filterByStatus.apply(m,status)).collect(Collectors.toList());
+    private Stream<FootBallMatch> filterByMatchStatus(Stream<FootBallMatch> matches, Optional<MatchStatus> status){
+        return matches.filter(m -> _filterByStatus.apply(m,status));
+    }
+
+    private Stream<FootBallMatch> filterByTeamName(Stream<FootBallMatch> matches, String teamName){
+        return matches.filter(m -> _filterTeamName.apply(m,teamName));
+    }
+
+    private Stream<FootBallMatch> filterByTournament(Stream<FootBallMatch> matches, FootBallTournament tournament){
+        return matches.filter(m -> _filterByTournament.apply(m,tournament));
     }
 
     private class TeamIdManager{
